@@ -1,0 +1,9 @@
+<launch>
+	<!-- Turtlesim Node-->
+	<node pkg="turtlesim" type="turtlesimnode" name="sim"/>
+
+	<!-- Teleop node-->
+	<node pkg="turtlesim" type="turtleteleopkey" name="teleop" output="screen"/>
+
+	<param name="/sim/backgroundr" value="255" type="int"/>
+</launch>
